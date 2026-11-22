@@ -1437,3 +1437,7 @@ html, body { overflow-x: clip; }
 .send-options{margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
 .send-options p{margin:0 0 10px;font-size:.92rem}
 .send-row{display:flex;gap:8px;flex-wrap:wrap}
+
+/* menu drawer: never chain scrolling to the page behind it */
+.drawer { overscroll-behavior: contain; overflow-y: auto; -webkit-overflow-scrolling: touch; height: 100vh; height: 100dvh; }
+.drawer-scrim { touch-action: none; overscroll-behavior: contain; }

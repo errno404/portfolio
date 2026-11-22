@@ -365,7 +365,7 @@ export function useCommands() {
       ...projects.map((p) => ({ group: "Projects", label: p.name, hint: p.tagline, href: `/projects/${p.id}` })),
       ...posts.map((p) => ({ group: "Blog", label: p.title, hint: p.date, href: `/blog/${p.slug}` })),
       { group: "Actions", label: "Copy email address", hint: person.email, run: "copy" },
-      { group: "Actions", label: "Open GitHub", hint: "github.com/Rishi-creator-11", ext: person.github },
+      { group: "Actions", label: "Open GitHub", hint: "github.com/errno404", ext: person.github },
       { group: "Actions", label: "Open LinkedIn", hint: "linkedin.com/in/rishi1111", ext: person.linkedin },
     ],
     []

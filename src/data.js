@@ -5,7 +5,7 @@ export const person = {
   email: "hrishitkumar.cs@gmail.com",
   phone: "(914) 446-0465",
   linkedin: "https://www.linkedin.com/in/rishi1111",
-  github: "https://github.com/Rishi-creator-11",
+  github: "https://github.com/errno404",
   resume: "/Rishi_Kumar_Resume.pdf",
   location: "New York, NY",
 };
@@ -50,7 +50,7 @@ export const projects = [
     stack: ["Python", "FastAPI", "Pydantic", "SQLAlchemy", "Alembic", "PostgreSQL", "pgvector", "Pinecone", "BM25", "Cohere Rerank", "OpenAI", "Redis", "BeautifulSoup", "yfinance", "SEC EDGAR", "Pytest", "Next.js", "React", "TypeScript", "Playwright", "Vitest"],
     links: [
       { label: "Live demo", href: "https://secfrontend.vercel.app/" },
-      { label: "Code", href: "https://github.com/Rishi-creator-11/sec-rag-engine" },
+      { label: "Code", href: "https://github.com/errno404/sec-rag-engine" },
     ],
     images: ["/projects/alphabrief-hero.webp", "/projects/alphabrief-panel.webp"],
     diagram: {
@@ -143,7 +143,7 @@ export const projects = [
       "Automated onboarding with an SSRF-safe website and PDF importer, backed by 36 Supabase migrations, 280+ pytest cases and GitHub Actions CI with live read-only smoke tests.",
     ],
     stack: ["Python", "FastAPI", "Uvicorn", "Pydantic", "httpx", "Supabase", "PostgreSQL", "pgvector", "Vapi", "ElevenLabs", "OpenAI", "Stripe", "Google Calendar API", "Pytest", "Render", "GitHub Actions"],
-    links: [{ label: "Code", href: "https://github.com/Rishi-creator-11/callpilot" }],
+    links: [{ label: "Code", href: "https://github.com/errno404/callpilot" }],
     images: ["/projects/callpilot-og.png"],
     diagram: {
       nodes: [
@@ -189,7 +189,7 @@ export const projects = [
     ],
     stack: ["TypeScript", "Next.js", "LLM evaluation", "Groq", "Gemini"],
     links: [
-      { label: "Code", href: "https://github.com/Rishi-creator-11/LLM-Eval-Dashboard" },
+      { label: "Code", href: "https://github.com/errno404/LLM-Eval-Dashboard" },
       { label: "Upstream", href: "https://github.com/nakshaatraa/LLM-Eval-Dashboard" },
     ],
     images: [],
@@ -218,7 +218,7 @@ export const projects = [
     ],
     stack: ["Python", "FastAPI", "React", "Vite", "OCR", "OpenRouter", "Docker"],
     links: [
-      { label: "Code", href: "https://github.com/Rishi-creator-11/doc-approval-demo" },
+      { label: "Code", href: "https://github.com/errno404/doc-approval-demo" },
       { label: "Upstream", href: "https://github.com/madebyagents/doc-approval-demo" },
     ],
     images: [],
@@ -247,7 +247,7 @@ export const projects = [
     ],
     stack: ["Python", "FastAPI", "React", "TypeScript", "LLM tool calling", "Docker"],
     links: [
-      { label: "Code", href: "https://github.com/Rishi-creator-11/lambda-erp" },
+      { label: "Code", href: "https://github.com/errno404/lambda-erp" },
       { label: "Upstream", href: "https://github.com/lambdadevelopment/lambda-erp" },
     ],
     images: [],

@@ -413,7 +413,7 @@ export const cardSpec = {
     desc: "An AI receptionist for small businesses. It answers calls from information the owner approved, books appointments on Google Calendar, captures leads, and bills by subscription. Built on FastAPI, PostgreSQL/pgvector and Vapi.",
     metric: "Answers only from owner-approved knowledge, with refusal safeguards",
     tech: "FastAPI · PostgreSQL · pgvector · Vapi",
-    links: [{ label: "GitHub", href: "https://github.com/Rishi-creator-11/callpilot" }],
+    links: [{ label: "GitHub", href: "https://github.com/errno404/callpilot" }],
   },
   alphabrief: {
     category: "Applied AI · Retrieval Engineering",
@@ -423,7 +423,7 @@ export const cardSpec = {
     tech: "Python · Pinecone · BM25 · Cohere",
     links: [
       { label: "Live demo", href: "https://secfrontend.vercel.app/" },
-      { label: "GitHub", href: "https://github.com/Rishi-creator-11/sec-rag-engine" },
+      { label: "GitHub", href: "https://github.com/errno404/sec-rag-engine" },
     ],
   },
   "mario-sdk": {

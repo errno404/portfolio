@@ -90,12 +90,33 @@ function Nav() {
   ];
   const active = (h) => (h === "/" ? PATH === "/" : PATH.startsWith(h));
   const [open, setOpen] = useState(false);
+  // Scroll lock while the menu is open. iOS Safari ignores overflow:hidden on <body>, so pin the body in place
+  // (position: fixed at the current offset), make the page behind the menu inert, and restore the scroll on close.
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    if (!open) return;
+    const y = window.scrollY;
+    const body = document.body;
+    const prev = { position: body.style.position, top: body.style.top, width: body.style.width, overflow: body.style.overflow };
+    body.style.position = "fixed";
+    body.style.top = `-${y}px`;
+    body.style.width = "100%";
+    body.style.overflow = "hidden";
+    const behind = [document.querySelector("main"), document.querySelector("footer")].filter(Boolean);
+    behind.forEach((el) => el.setAttribute("inert", ""));
+    return () => {
+      behind.forEach((el) => el.removeAttribute("inert"));
+      body.style.position = prev.position;
+      body.style.top = prev.top;
+      body.style.width = prev.width;
+      body.style.overflow = prev.overflow;
+      window.scrollTo({ top: y, behavior: "instant" });
+    };
+  }, [open]);
+  useEffect(() => {
     const onKey = (e) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [open]);
+  }, []);
   useEffect(() => {
     const close = () => setOpen(false);
     window.addEventListener("hashchange", close);
