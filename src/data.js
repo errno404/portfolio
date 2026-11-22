@@ -298,7 +298,7 @@ export const work = [
     short: {"co": "CallPilot", "role": "Contract AI Engineer", "loc": "New York, NY", "stats": [{"v": "100", "l": "business customers"}, {"v": "Stateful", "l": "agent runtime"}, {"v": "Multi-tenant", "l": "architecture"}]},
     stack: ["Python", "FastAPI", "Supabase", "WebSockets"],
     logo: null,
-    links: [{ label: "Code", href: "https://github.com/Rishi-creator-11/callpilot" }],
+    links: [{ label: "Code", href: "https://github.com/errno404/callpilot" }],
   },
   {
     id: "pencil",
